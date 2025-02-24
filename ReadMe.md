@@ -13,9 +13,7 @@ We want to use cryo to query data from Ethereum mainnet
 # What do we use in cryo and how
 Cryo provides methods to retreives data from the blockchain with very fast response, avoiding iterations.
 
-We are focusing in 
-
-# Data that we query 
+# Data we query 
 ## Uni-V2: USDC
 From the Uniswap pool we get ETH/USDC price via tokens reserves
 
