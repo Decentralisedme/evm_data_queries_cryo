@@ -1,45 +1,23 @@
-# Cryo Installation Guide
+# Source
+I have followed and been inspired by [libevm Twitter broadcast](https://x.com/i/broadcasts/1rmxPonPrkVJN). Gread insite how to make use of cryo with contracts abi and function signatures and blockchain economics.
 
-This guide helps you set up Cryo, a fast indexer for EVM-based chains. For more details, visit the [original repository](https://github.com/paradigmxyz/cryo).
 
+# Scope
+We want to use cryo to query data from Ethereum mainnet
 
-## Prerequisites
+# Tools
+- Python
+- Cryo: check CryoInstall.md guide
+- Jupyter Notebook
 
-1. Rust: [rust-lang page](https://www.rust-lang.org/tools/install)
-2. Python3
+# What do we use in cryo and how
+Cryo provides methods to retreives data from the blockchain with very fast response, avoiding iterations.
 
-## Installation Steps
+We are focusing in 
 
-1. Create Python virtual environment:
-```bash
-python3 -m venv .venv
-```
+# Data that we query 
+## Uni-V2: USDC
+From the Uniswap pool we get ETH/USDC price via tokens reserves
 
-2. Activate virtual environment: 
-```bash
-source .venv/bin/activate
-```
-
-3. Install required packages:
-Install required packages:
-```bash
-pip install maturin
-pip install polars --verbose
-```
-
-4. Clone the Cryo repository
-```bash
-git clone https://github.com/paradigmxyz/cryo
-```
-
-5. Navigate to Python crate:
-```bash
-cd cryo/crates/python
-```
-
-6. Build with Maturin:
-```bash
-maturin build --release
-```
 
 
