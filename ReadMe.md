@@ -21,8 +21,8 @@ From the Uniswap pool we get ETH/USDC price via tokens reserves
 In uni-V3 we cannot make use of get reserve to calc prices. Uni-V3 allows LP to provie liquidity on specif price range introducing the concentrated liquidity model, this is very differtn from UNI-V1 and V2 the liquidity had to be provided on the intire price range. 
 The price range can be determined via 'ticks':
 
-UNI_V3 WBTC: 0xCBCdF9626bC03E24f779434178A73a0B4bad62eD
-WBTC: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
+- UNI_V3 WBTC: 0xCBCdF9626bC03E24f779434178A73a0B4bad62eD
+- WBTC: 0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599
 
 We look for:
 ```bash 
@@ -37,4 +37,8 @@ slot0 = Slot0({
     unlocked: true
 });
 ```
+Add block Timestamp:
+- Multicall3 function: getCurrentBlockTimestamp()
+- Function Signature: 0x0f28c97d
+
 
