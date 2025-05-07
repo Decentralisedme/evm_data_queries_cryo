@@ -24,3 +24,5 @@ price_tok0_tok1 = tok_0_tok_1_price_UniV2(usdc_bal,eth_bal)
 print(f"ETH/USDC: {price_tok0_tok1}")
 price_tok1_tok0 = tok_1_tok_0_price_UniV2(eth_bal,usdc_bal)
 print(f"USDC/ETH: {price_tok1_tok0}")
+
+# Examples:
